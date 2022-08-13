@@ -45,3 +45,4 @@ class EnemyUnit(PlayerUnit):
         """Если умение уже использовано, то обычный удар"""
         # Не работает ((()))
         return self.hit(target)
+
