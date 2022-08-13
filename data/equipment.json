@@ -2,20 +2,27 @@
   "weapons": [
    {
     "id": 1,
+    "name": "меч",
+    "min_damage": 3.0,
+    "max_damage": 5.0,
+    "stamina_per_hit": 2.0
+  },
+  {
+    "id": 2,
     "name": "топорик",
     "min_damage": 2.5,
     "max_damage": 4.1,
     "stamina_per_hit": 1.8
   },
   {
-    "id": 2,
-    "name": "ножик",
-    "min_damage": 1.2,
-    "max_damage": 2.5,
-    "stamina_per_hit": 1.3
+  "id": 3,
+  "name": "ножик",
+  "max_damage": 1.2,
+  "min_damage": 2.5,
+  "stamina_per_hit": 1.3
   },
   {
-  "id": 3,
+  "id": 4,
   "name": "ладошки",
   "max_damage": 1,
   "min_damage": 0.5,
@@ -40,6 +47,12 @@
     "name": "панцирь",
     "defence": 2.0,
     "stamina_per_turn": 1.6
+    },
+    {
+    "id": 4,
+    "name": "бронежилет",
+    "defence": 3.0,
+    "stamina_per_turn": 2.0
     }
   ]
 }
