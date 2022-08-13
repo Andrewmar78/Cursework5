@@ -63,8 +63,10 @@ class BaseUnit(ABC):
         pass
 
     def use_skill(self, target: BaseUnit) -> str:
-        """Метод использования умения"""
+        """Метод использования умения, если использовано - обычный удар"""
         if self._is_skill_used:
-            return f"{self.name} хотел использовать {self.unit_class.skill.name}, но его уже не осталось"
+            self.hit(target=target)
+            return f"{self.name} хотел использовать {self.unit_class.skill.name}, но его уже не осталось. " \
+                   f"Пришлось применить обычный удар"
         self._is_skill_used = True
         return self.unit_class.skill.use(user=self, target=target)

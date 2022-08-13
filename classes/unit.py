@@ -43,6 +43,5 @@ class EnemyUnit(PlayerUnit):
                 return self.use_skill(target)
 
         """Если умение уже использовано, то обычный удар"""
-        # Не работает ((()))
+        # Не работает
         return self.hit(target)
-
