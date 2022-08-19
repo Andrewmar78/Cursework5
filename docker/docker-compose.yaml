@@ -3,8 +3,11 @@ version: '3.7'
 services:
 
   war_game:
-    build: .
+    build:
+      context: ./war_game
+      dockerfile: Dockerfile
 #    build: ../..
+
     command: gunicorn --bind 0.0.0.0:8000 run:app
     restart: always
 
