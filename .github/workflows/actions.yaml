@@ -40,4 +40,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
             cd war_game_ci
-            echo ${{ secrets.PASSWORD }} | sudo -S docker-compose up -d
+            echo ${{ secrets.PASSWORD }} | sudo -S docker-compose up -d --remove-orphans
