@@ -32,7 +32,7 @@ jobs:
           target: "war_game_ci"
           strip_components: 1
       - name: deploy app
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.6.4
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
