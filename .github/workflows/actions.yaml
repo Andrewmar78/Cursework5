@@ -23,7 +23,7 @@ jobs:
           mkdir deploy
           cat deploy/docker-compose-ci.yaml | envsubst > deploy/docker-compose.yaml
       - name: copy files to server
-        uses: appleboy/scp-action@v0.1.5
+        uses: appleboy/scp-action@v0.1.3
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
