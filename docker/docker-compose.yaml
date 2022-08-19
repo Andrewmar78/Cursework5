@@ -4,7 +4,7 @@ services:
 
   war_game:
     build:
-      context: ./cursework5
+      context: .
       dockerfile: Dockerfile
 #    build: ../..
 
