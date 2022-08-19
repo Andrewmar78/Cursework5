@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
 
-  skywars:
+  war_game:
     image: 725311/war_game:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     command: gunicorn --bind 0.0.0.0:8000 run:app
     restart: always
