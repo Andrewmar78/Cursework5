@@ -13,18 +13,10 @@ from server import create_app
 # Загрузка конфигурации из config.py
 app = create_app(BaseConfig)
 
-# Не могу сообразить, как использовать в таком виде:
-# heroes = {
-#     "player": PlayerUnit,
-#     "enemy": EnemyUnit
-# }
-
-# А так не очень корректно все:
 heroes = {
     "player": None,
     "enemy": None
 }
-
 arena = Arena()
 
 

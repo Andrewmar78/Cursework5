@@ -18,7 +18,6 @@ class Armor:
 
 @dataclass
 class Weapon:
-    # id: int
     name: str
     min_damage: float
     max_damage: float

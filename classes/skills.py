@@ -70,12 +70,6 @@ class HardShot(Skill):
     stamina: float = 5.0
     damage: float = 15.0
 
-    # def skill_effect(self):
-    #     """Уменьшение выносливости нападающего и здоровья цели"""
-    #     self.user.stamina -= self.stamina
-    #     self.target.hp -= self.damage
-    #     return f"{self.user.name} использует {self.name} и наносит {self.damage} урона сопернику."
-
 
 class MagicFire(Skill):
     name: str = "Волшебное пламя"
