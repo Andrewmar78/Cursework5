@@ -3,7 +3,8 @@ version: '3.7'
 services:
 
   war_game:
-    build: ../..
+    build: .
+#    build: ../..
     command: gunicorn --bind 0.0.0.0:8000 run:app
     restart: always
 
