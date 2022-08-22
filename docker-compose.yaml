@@ -12,15 +12,16 @@ services:
 #    build: ../..
 #    command: gunicorn --bind 0.0.0.0:8000 run:app
     restart: always
-    depends_on:
-      -   db
+#    depends_on:
+#      -   db
 
-  db:
-    image: postgres
-    environment:
-      POSTGRES_USER: $DB_USER
-      POSTGRES_PASSWORD: $DB_PASSWORD
-      POSTGRES_DB: $DB_NAME
+#  db:
+#    image: postgres
+#    environment:
+#      POSTGRES_USER: $DB_USER
+#      POSTGRES_PASSWORD: $DB_PASSWORD
+#      POSTGRES_DB: $DB_NAME
+
 #      -   nginx
 
 #  nginx:
